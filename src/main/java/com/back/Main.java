@@ -30,6 +30,7 @@ public class Main {
                 list.put(count, new String[]{wiseSayingAuthor, wiseSayingContent});
                 System.out.println(count +"번 명언이 등록되었습니다.");
             } else if (cmd.equals("목록")) {
+                System.out.println("번호 / 작가 / 명언");
                 list.forEach((key, value) -> {
                     System.out.println(key + " / " + value[0] + " / " + value[1]);
                 });
